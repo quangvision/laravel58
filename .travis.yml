@@ -16,7 +16,6 @@ before_script:
   - sudo mysql -e 'CREATE DATABASE laravel58;'
   - composer self-update
   - composer install --no-interaction
-  - php artisan migrate --no-interaction -vvv
 
 script:
   - vendor/bin/phpunit
